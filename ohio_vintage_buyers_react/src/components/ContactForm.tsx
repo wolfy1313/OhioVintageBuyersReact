@@ -42,13 +42,10 @@ const ContactForm = () => {
               <p className="mt-1 text-sm text-gray-500 font-bold dark:text-gray-500" id="file_input_help">PNG or JPG images only please.</p>
             </div>
           </div>
-          <div className="md:flex md:items-center">
-            <div className="md:w-1/3"></div>
-            <div className="md:w-2/3">
-              <button className="shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
-                Get Vintage'd
-              </button>
-            </div>
+          <div className="md:flex justify-center">
+            <button className="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+              Get Vintage'd
+            </button>
           </div>
         </form>
       </div>
