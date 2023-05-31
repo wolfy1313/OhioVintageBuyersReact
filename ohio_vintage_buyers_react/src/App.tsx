@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import ContactForm from './components/ContactForm';
 import FooterPage from './components/FooterPage';
+import PageInfo from './components/PageInfo';
+import ImageCarousel from './components/ImageCarousel'
 
 function App() {
   return (
@@ -11,7 +13,12 @@ function App() {
         <h1 className='font-black text-5xl bg-slate-500'>Ohio is for Vintage Lovers</h1>
       </header>
       <body className='bg-yellow-300 min-h-screen min-w-full'>
+        <PageInfo />
         <ContactForm />
+        <div className='mt-10'>
+          <h1>Some Images To See</h1>
+          <ImageCarousel slideInterval={1000} />
+        </div>
       </body>
       <footer>
         <FooterPage />
