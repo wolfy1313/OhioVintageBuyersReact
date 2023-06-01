@@ -6,6 +6,7 @@ import FooterPage from './components/FooterPage';
 import PageInfo from './components/PageInfo';
 import ImageCarousel from './components/ImageCarousel'
 
+
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,7 @@ function App() {
         <ContactForm />
         <div className='mt-10'>
           <h1>Some Images To See</h1>
-          <ImageCarousel slideInterval={1000} />
+          <ImageCarousel slideInterval={3000} />
         </div>
       </body>
       <footer>
