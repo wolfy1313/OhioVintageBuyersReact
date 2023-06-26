@@ -13,14 +13,14 @@ function App() {
       <header>
         <h1 className='font-black text-5xl bg-slate-500'>Ohio is for Vintage Lovers</h1>
       </header>
-      <body className='bg-yellow-300 min-h-screen min-w-full'>
+      <div className='bg-yellow-300 min-h-screen min-w-full'>
         <PageInfo />
         <ContactForm />
         <div className='mt-10'>
           <h1>Some Images To See</h1>
           <ImageCarousel slideInterval={3000} />
         </div>
-      </body>
+      </div>
       <footer>
         <FooterPage />
       </footer>

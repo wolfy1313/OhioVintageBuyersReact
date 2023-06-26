@@ -1,5 +1,7 @@
 import React from 'react'
 import { Card } from 'flowbite-react'
+// import '../../fonts/JeffLevine-NondescriptJNL.otf'
+// import '../../fonts/ITCBlair-CondensedMedium.otf'
 
 type Props = {}
 

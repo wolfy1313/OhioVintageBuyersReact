@@ -11,19 +11,31 @@ type Props = {
 const ImageCarousel = (props: Props) => {
   const slides = [
     {
-      url: `${process.env.PUBLIC_URL}/swangeroval.PNG`
+      url: `${process.env.PUBLIC_URL}/image0.jpeg`
     },
     {
-      url: "https://flowbite.com/docs/images/carousel/carousel-2.svg"
+      url: `${process.env.PUBLIC_URL}/image1-1.jpeg`
     },
     {
-      url: "https://flowbite.com/docs/images/carousel/carousel-3.svg"
+      url: `${process.env.PUBLIC_URL}/image1-2.jpeg`
     },
     {
-      url: "https://flowbite.com/docs/images/carousel/carousel-4.svg"
+      url: `${process.env.PUBLIC_URL}/image1.jpeg`
     },
     {
-      url: "https://flowbite.com/docs/images/carousel/carousel-5.svg"
+      url: `${process.env.PUBLIC_URL}/image01.jpeg`
+    },
+    {
+      url: `${process.env.PUBLIC_URL}/image2-1.jpeg`
+    },
+    {
+      url: `${process.env.PUBLIC_URL}/image2-2.jpeg`
+    },
+    {
+      url: `${process.env.PUBLIC_URL}/image2.jpeg`
+    },
+    {
+      url: `${process.env.PUBLIC_URL}/image02.jpeg`
     },
   ]
 
@@ -55,7 +67,7 @@ const ImageCarousel = (props: Props) => {
   }
   return (
     <div>
-      <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group'>
+      <div className='max-w-[780px] h-[1400px] w-full m-auto py-16 px-4 relative group'>
         <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'>
         </div>
         <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
