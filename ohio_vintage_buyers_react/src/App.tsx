@@ -11,13 +11,15 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className='font-black text-5xl bg-slate-500'>Ohio is for Vintage Lovers</h1>
+        <h1 className='font-black text-5xl bg-slate-500'>Ohio Vintage Buyers</h1>
       </header>
       <div className='bg-yellow-300 min-h-screen min-w-full'>
         <PageInfo />
         <ContactForm />
         <div className='mt-10'>
-          <h1>Some Images To See</h1>
+          <h1>THE ITEMS WE ARE LOOKING FOR DO NOT HAVE TO BE IN PERFECT CONDITION. </h1>
+          <h1>STAINS, HOLES, DIRT, WEAR, AND GENERAL TEAR ARE OK. </h1>
+          <h1>WE BUY YOUR ITEMS AS IS, IN A WIDE RANGE OF CONDTIONS.</h1>
           <ImageCarousel slideInterval={3000} />
         </div>
       </div>

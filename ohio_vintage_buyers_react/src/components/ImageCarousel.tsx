@@ -67,7 +67,7 @@ const ImageCarousel = (props: Props) => {
   }
   return (
     <div>
-      <div className='max-w-[780px] h-[1400px] w-full m-auto py-16 px-4 relative group'>
+      <div className='max-w-[780px] h-[1000px] w-full m-auto py-16 px-4 relative group'>
         <img
           src={slides[currentIndex].url}
           alt={`Slide ${currentIndex}`}
