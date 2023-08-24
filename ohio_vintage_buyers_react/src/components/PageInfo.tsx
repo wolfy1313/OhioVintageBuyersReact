@@ -7,7 +7,7 @@ type Props = {}
 
 const PageInfo = (props: Props) => {
   return (
-    <Card className='b bg-yellow-400'>
+    <Card className='b bg-amber-100'>
       <h5 className="mb-2 text-3xl font-bold text-gray-700 dark:text-white">
         Sell your old stuff. Let it live again. You old bastard.
       </h5>

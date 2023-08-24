@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className='font-black text-5xl bg-slate-500'>Ohio Vintage Buyers</h1>
+        <h1 className='font-black text-5xl bg-red-500'>Ohio Vintage Buyers</h1>
       </header>
-      <div className='bg-yellow-300 min-h-screen min-w-full'>
+      <div className='bg-amber-100 min-h-screen min-w-full'>
         <PageInfo />
         <ContactForm />
         <div className='mt-10'>

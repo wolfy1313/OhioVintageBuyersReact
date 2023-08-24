@@ -34,7 +34,7 @@ const ContactForm = () => {
           </div>
 
           <div className="md:flex justify-center">
-            <button className="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+            <button className="shadow bg-red-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
               Get Vintage'd
             </button>
           </div>

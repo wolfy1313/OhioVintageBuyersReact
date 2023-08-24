@@ -5,7 +5,7 @@ type Props = {}
 
 const FooterPage = (props: Props) => {
   return (
-    <Footer container={true}>
+    <Footer container={true} className='b bg-amber-100'>
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
           <Footer.Brand
