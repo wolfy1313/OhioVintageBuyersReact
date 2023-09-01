@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
 
@@ -46,16 +46,16 @@ const ImageCarousel = (props: Props) => {
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1
     setCurrentIndex(newIndex)
   }
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     const isLastSlide = currentIndex === slides.length - 1
     const newIndex = isLastSlide ? 0 : currentIndex + 1
     setCurrentIndex(newIndex)
-  }
+  }, [])
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       nextSlide();
-    }, props.slideInterval);
+    },);
 
     return () => {
       clearInterval(intervalId)
