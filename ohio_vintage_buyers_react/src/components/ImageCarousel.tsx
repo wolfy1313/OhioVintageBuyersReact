@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
 
@@ -46,21 +46,22 @@ const ImageCarousel = (props: Props) => {
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1
     setCurrentIndex(newIndex)
   }
-  const nextSlide = useCallback(() => {
+  const nextSlide = () => {
+    console.log("hello there next slide")
     const isLastSlide = currentIndex === slides.length - 1
     const newIndex = isLastSlide ? 0 : currentIndex + 1
     setCurrentIndex(newIndex)
-  }, [currentIndex, slides.length])
+  }
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    },);
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     nextSlide();
+  //   });
 
-    return () => {
-      clearInterval(intervalId)
-    };
-  }, [currentIndex, nextSlide, props.slideInterval])
+  //   return () => {
+  //     clearInterval(intervalId)
+  //   };
+  // }, [currentIndex, props.slideInterval])
 
   const goToSlide = (slideIndex: number) => {
     setCurrentIndex(slideIndex)
@@ -77,7 +78,7 @@ const ImageCarousel = (props: Props) => {
           <BsChevronCompactLeft onClick={prevSlide} size={30} />
         </div>
         <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-          <BsChevronCompactRight onClick={(nextSlide)} size={30} />
+          <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
         <div className='flex top-4 justify-center py-2'>
           {slides.map((slide, slideIndex) => (
