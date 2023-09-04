@@ -53,15 +53,15 @@ const ImageCarousel = (props: Props) => {
     setCurrentIndex(newIndex)
   }
 
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     nextSlide();
-  //   });
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, props.slideInterval);
 
-  //   return () => {
-  //     clearInterval(intervalId)
-  //   };
-  // }, [currentIndex, props.slideInterval])
+    return () => {
+      clearInterval(intervalId)
+    };
+  }, [currentIndex, props.slideInterval])
 
   const goToSlide = (slideIndex: number) => {
     setCurrentIndex(slideIndex)
