@@ -47,7 +47,6 @@ const ImageCarousel = (props: Props) => {
     setCurrentIndex(newIndex)
   }
   const nextSlide = () => {
-    console.log("hello there next slide")
     const isLastSlide = currentIndex === slides.length - 1
     const newIndex = isLastSlide ? 0 : currentIndex + 1
     setCurrentIndex(newIndex)
